@@ -1,0 +1,23 @@
+{
+  "LocaleSwitcher": {
+    "es": "Español",
+    "en": "English",
+    "label": "Language"
+  },
+  "header": {
+    "about": "About me",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills"
+  },
+  "hero": {
+    "title": "Hello, I'm ",
+    "subtitle1": "Software Engineer",
+    "subtitle2": "Web and Mobile Developer",
+    "subtitle3": "Frontend Developer",
+    "subtitle4": "Backend Developer",
+    "subtitle5": "Fullstack Developer",
+    "description": "Passionate about technology and continuous learning, I am a software developer with solid experience in designing and developing web and mobile applications. I excel at creating innovative, efficient, and scalable solutions, focusing on both user experience and code quality. I enjoy working in teams, contributing ideas, and adapting to new challenges, always focused on delivering products that generate real value for people and businesses.",
+    "button": "Download CV"
+  }
+}

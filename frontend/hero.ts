@@ -10,9 +10,9 @@ export default heroui({
     light: {
       layout: {},
       colors: {
-        background: "#f9fbfa",
-        foreground: "#0c1310",
-        primary: "#7db59a",
+        background: "#e2eef8",
+        foreground: "#111d17",
+        primary: "#7db599",
         secondary: "#aabeca",
         content1: "#8292b0",
       },
@@ -20,9 +20,9 @@ export default heroui({
     dark: {
       layout: {},
       colors: {
-        background: "#040605",
-        foreground: "#ecf3f0",
-        primary: "#4a8267",
+        background: "#07131d",
+        foreground: "#e2eee8",
+        primary: "#4a8266",
         secondary: "#354955",
         content1: "#4f5f7d",
       },

@@ -1,0 +1,23 @@
+{
+  "LocaleSwitcher": {
+    "es": "Español",
+    "en": "English",
+    "label": "Idioma"
+  },
+  "header": {
+    "about": "Sobre mi",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades"
+  },
+  "hero": {
+    "title": "¡Hola, soy ",
+    "subtitle1": "Ingeniero en Desarrollo y Gestión de Software",
+    "subtitle2": "Desarrollador Web y Movil",
+    "subtitle3": "Desarrollador Frontend",
+    "subtitle4": "Desarrollador Backend",
+    "subtitle5": "Desarrollador Fullstack",
+    "description": "Apasionado por la tecnología y el aprendizaje continuo, soy un desarrollador de software con sólida experiencia en el diseño y desarrollo de aplicaciones web y móviles. Me destaco por crear soluciones innovadoras, eficientes y escalables, cuidando tanto la experiencia de usuario como la calidad del código. Disfruto trabajar en equipo, aportar ideas y adaptarme a nuevos retos, siempre enfocado en entregar productos que generen valor real para las personas y los negocios.",
+    "button": "Descargar CV"
+  }
+}
