@@ -47,7 +47,7 @@ const Header = () => {
         <Navbar disableAnimation>
           <NavbarContent className="sm:hidden pr-3" justify="center">
             <NavbarBrand>
-              <Link className="flex flex-row items-center gap-3" href="/">
+              <Link className="flex flex-row items-center gap-3" href="#">
                 <Avatar
                   size="sm"
                   isBordered
