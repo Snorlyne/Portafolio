@@ -1,19 +1,19 @@
 "use client";
 
+import Profile from "@/core/assets/images/profile-hero2.jpeg";
 import {
+  Avatar,
   Navbar,
-  NavbarContent,
-  NavbarMenuToggle,
   NavbarBrand,
+  NavbarContent,
   NavbarItem,
   NavbarMenu,
-  Avatar,
+  NavbarMenuToggle,
 } from "@heroui/react";
-import Link from "next/link";
-import { useTranslations } from "next-intl";
-import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-
+import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 const Header = () => {
   const t = useTranslations("header");
   const [linkActive, setLinkActive] = useState<string>("about");
@@ -38,13 +38,13 @@ const Header = () => {
   return (
     <AnimatePresence>
       <motion.header
-        className="top-0 z-50 sticky sm:py-2"
+        className="top-0 z-50 sticky"
         initial={{ opacity: 0, y: -40 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -40 }}
         transition={{ duration: 0.4 }}
       >
-        <Navbar disableAnimation>
+        <Navbar disableAnimation className="sm:py-2">
           <NavbarContent className="sm:hidden pr-3" justify="center">
             <NavbarBrand>
               <Link className="flex flex-row items-center gap-3" href="#">
@@ -52,7 +52,7 @@ const Header = () => {
                   size="sm"
                   isBordered
                   color="success"
-                  src="https://i.pravatar.cc/150?u=a04258114e29026302d"
+                  src={Profile.src}
                 />
               </Link>
             </NavbarBrand>
@@ -63,7 +63,7 @@ const Header = () => {
                 <Avatar
                   isBordered
                   color="success"
-                  src="https://i.pravatar.cc/150?u=a04258114e29026302d"
+                  src={Profile.src}
                 />
               </Link>
             </NavbarBrand>

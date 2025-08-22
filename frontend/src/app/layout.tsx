@@ -1,9 +1,9 @@
-import { NextIntlClientProvider, useMessages } from "next-intl";
-import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/globals.css";
-import { Providers } from "./providers";
+import type { Metadata, Viewport } from "next";
+import { NextIntlClientProvider } from "next-intl";
 import { getLocale } from "next-intl/server";
+import { Geist, Geist_Mono } from "next/font/google";
+import { Providers } from "./providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

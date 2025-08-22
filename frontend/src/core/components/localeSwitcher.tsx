@@ -6,7 +6,7 @@ export default function LocaleSwitcher() {
   const locale = useLocale();
 
   return (
-    <div className="top-20 sticky flex justify-end px-4 sm:px-12">
+    <div className="top-20 z-50 sticky flex justify-end px-4 sm:px-12">
       <LocaleSwitcherSelect
         defaultValue={locale}
         items={[

@@ -1,26 +1,21 @@
 "use client";
-import { useState, useTransition } from "react";
-import { Locale } from "@/i18n/config";
-import { Select, SelectSection, SelectItem } from "@heroui/select";
 import { setUserLocale } from "@/core/services/locale.service";
-import { HiLanguage } from "react-icons/hi2";
-import { Modal, ModalBody, ModalContent } from "@heroui/react";
-import { FaCheck } from "react-icons/fa";
+import { Locale } from "@/i18n/config";
 import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
+import { FaCheck } from "react-icons/fa";
+import { HiLanguage } from "react-icons/hi2";
 type Props = {
   defaultValue: string;
   items: Array<{ value: string; label: string }>;
 };
 
 const LocalSwitcherSelect = ({ defaultValue, items }: Props) => {
-  const [isPending, startTransition] = useTransition();
   const [isOpen, setIsOpen] = useState(false);
 
   function onChange(value: string) {
     const locale = value as Locale;
-    startTransition(() => {
-      setUserLocale(locale);
-    });
+    setUserLocale(locale);
   }
 
   // Helper para íconos de bander
@@ -30,10 +25,7 @@ const LocalSwitcherSelect = ({ defaultValue, items }: Props) => {
       onClick={() => setIsOpen(!isOpen)}
       className="relative flex items-center gap-2 bg-black/10 hover:bg-black/20 dark:bg-white/10 dark:hover:bg-white/20 p-2 rounded-full cursor-pointer"
     >
-      <HiLanguage
-        className="size-6 text-foreground text-lg"
-        aria-label="Language"
-      />
+      <HiLanguage className="size-6 text-foreground text-lg" aria-label="Language" />
       <AnimatePresence>
         {isOpen && (
           <div className="top-12 right-0 z-50 absolute">
